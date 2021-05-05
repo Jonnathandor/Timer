@@ -1,0 +1,15 @@
+.col {
+    margin-top: 20px;
+}
+
+.clock {
+    display: inline-block;
+}
+
+.terms {
+    border: 1px gray dotted;
+}
+
+.terms h5, .terms p {
+    padding-top: 10px;
+}

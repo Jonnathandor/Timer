@@ -1,14 +1,26 @@
-
 const displayCurrentTime = () => {
     let currentDate = new Date();
-    currentTime = `${currentDate.getHours()} : ${currentDate.getMinutes()} : ${currentDate.getSeconds()}`;
+    // currentTime = `${currentDate.getHours()} : ${currentDate.getMinutes()} : ${currentDate.getSeconds()}`;
+    let currentTime = currentDate.toLocaleTimeString();
 
     document.getElementById('current-time').innerText = currentTime;
     // return currentTime;
 }
 
+const newDateObject = () => {
+    let currentDate = new Date();
+    document.getElementById('to-date').innerText = currentDate;
+    // return currentTime;
+}
+
+//Invocations 
+
 setInterval(() => {
     displayCurrentTime();
 }, 1000);
+
+newDateObject();
+
+
 
 
