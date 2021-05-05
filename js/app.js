@@ -13,6 +13,12 @@ const newDateObject = () => {
     // return currentTime;
 }
 
+const dateNow = () => {
+    let milliseconds = Date.now();
+    document.getElementById('date-now').innerText = `Gives back milliseconds: ${milliseconds}`;
+    // return currentTime;
+}
+
 //Invocations 
 
 setInterval(() => {
@@ -20,6 +26,8 @@ setInterval(() => {
 }, 1000);
 
 newDateObject();
+
+dateNow();
 
 
 
